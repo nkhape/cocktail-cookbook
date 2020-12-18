@@ -20,3 +20,5 @@ Ingredient.create(name: "tabasco")
 Ingredient.create(name: "ginger ale")
 Ingredient.create(name: "cucumber slice")
 Ingredient.create(name: "fancy straw")
+
+Cocktail.create(name: "Caesar")
