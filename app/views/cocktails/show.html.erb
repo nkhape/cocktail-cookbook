@@ -1,6 +1,14 @@
 <div class="container">
   <h1>Hey, how about a <%= @cocktail.name %>?</h1>
 
+  <p><strong>Here's what you'll need:</strong></p>
+  <ul>
+    <% @cocktail.doses.each do |dose|%>
+      <li><%= dose.ingredient.name %>
+      <%= dose.description %></li>
+    <% end %>
+  </ul>
+
   <p class="btn btn-outline-primary"><%= link_to "Add an ingredient!", new_cocktail_dose_path(@cocktail) %></p>
   <p class="btn btn-outline-primary"><%= link_to "See all yummy Cocktails", cocktails_path %></p>
 </div>
