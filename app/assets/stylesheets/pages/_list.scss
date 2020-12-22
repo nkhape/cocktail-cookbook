@@ -1,0 +1,17 @@
+.no-bp-list li {
+    list-style-type: none;
+}
+
+.pretty-links a {
+  text-decoration: none;
+  color: orangered;
+}
+
+.pretty-links a:hover {
+  color: black;
+}
+
+.main-pic img {
+  max-width: 100%;
+  height: auto;
+}

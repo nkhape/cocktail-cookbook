@@ -1,9 +1,15 @@
-<div class="container">
+<div class="main-pic">
+  <%= image_tag("cocktail.jpg", :alt => "cocktail picture") %>
   <h1>Look at all our tasty Cocktails 👀</h1>
+</div>
 
-  <ul>
+<div class="container">
+
+
+
+  <ul class="no-bp-list">
     <% @cocktails.each do |cocktail| %>
-      <li>
+      <li class="pretty-links">
         <%= link_to cocktail.name, cocktail_path(cocktail) %>
       </li>
     <% end %>
