@@ -1,14 +1,20 @@
+.no-bp-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .no-bp-list li {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .pretty-links a {
   text-decoration: none;
-  color: orangered;
+  color: black;
 }
 
 .pretty-links a:hover {
-  color: black;
+  color: darkgrey;
 }
 
 .main-pic {
@@ -19,6 +25,8 @@
   color: white;
   align-items: center;
   justify-content: space-around;
-  font-size: 80px;
+  font-family: 'League Script', cursive;
+  font-size: 125px;
+  font-weight: bold;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
