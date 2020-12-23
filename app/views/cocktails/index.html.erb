@@ -1,12 +1,10 @@
-<div class="main-pic">
-  <%= image_tag("cocktail.jpg", :alt => "cocktail picture") %>
-  <h1>Look at all our tasty Cocktails 👀</h1>
+<div class="main-pic d-flex" style="background-image: url(<%= asset_path 'cocktail.jpg' %>);">
+
+  <p>Welcome & Enjoy</p>
 </div>
 
 <div class="container">
-
-
-
+  <h2>Have a look at all our tasty Cocktails 👀</h2>
   <ul class="no-bp-list">
     <% @cocktails.each do |cocktail| %>
       <li class="pretty-links">
