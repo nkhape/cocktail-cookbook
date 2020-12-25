@@ -1,3 +1,37 @@
 .no-bp-list li {
     list-style-type: none;
 }
+
+.icon-small {
+  font-size: 14px;
+  color: white;
+}
+
+.icon-small:hover {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.main-pic {
+  max-width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'League Script', cursive;
+  font-size: 125px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.fancy-font {
+  font-family: 'League Script', cursive;
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}

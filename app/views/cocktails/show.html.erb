@@ -1,29 +1,28 @@
-<div class="container">
-
-  <div class="d-flex">
-    <h1><%= @cocktail.name %></h1>
-    <p class="ml-3 mt-3">
-      <%= link_to cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" } do %>
-        <i class="fa fa-trash-alt ml-1"></i>
-      <% end %>
-    </p>
+<div class="main-pic d-flex" style="background-image: url(<%= asset_path 'cocktail.jpg' %>);">
+  <div class="d-flex main-pic">
+      <h1 class="fancy-font"><%= @cocktail.name %></h1>
+      <p class="ml-3">
+        <%= link_to cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" } do %>
+          <i class="icon-small fa fa-trash-alt ml-1"></i>
+        <% end %>
+      </p>
   </div>
+</div>
 
-  <p><strong>Here's what you'll need:</strong></p>
+<div class="container">
+  <p class= mt-4><strong><i class="fas fa-list"></i> Here's what you'll need </strong></p>
   <ul class="no-bp-list">
     <% @cocktail.doses.each do |dose|%>
       <li>
         <strong><%= dose.ingredient.name %></strong> -
         <%= dose.description %>
         <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
-          <i class="fa fa-trash-alt"></i>
+          <i class="icon-small black ml-2 fa fa-trash-alt"></i>
         <% end %>
-
       </li>
     <% end %>
   </ul>
-
-  <p class="btn btn-outline-primary"><%= link_to "Add an ingredient!", new_cocktail_dose_path(@cocktail) %></p>
+  <p class="mt-4 btn btn-outline-primary"><%= link_to "Add an ingredient!", new_cocktail_dose_path(@cocktail) %></p>
 </div>
 
 
