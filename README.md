@@ -1,24 +1,13 @@
-# README
+# Cocktail Maker 2000
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Homepage
+![Uploading Screenshot 2020-12-26 at 00.41.27.png…]()
 
-Things you may want to cover:
+Single cocktail
+![Uploading Screenshot 2020-12-26 at 00.41.51.png…]()
 
-* Ruby version
+Create a new cocktail
+<img width="939" alt="Screenshot 2020-12-26 at 00 44 02" src="https://user-images.githubusercontent.com/37460248/103177415-a36d6e80-487a-11eb-8a30-b8924c8c8b2d.png">
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Add ingredients to a cocktail
+<img width="940" alt="Screenshot 2020-12-26 at 00 42 56" src="https://user-images.githubusercontent.com/37460248/103177409-9e102400-487a-11eb-91a4-615822d16ae9.png">
